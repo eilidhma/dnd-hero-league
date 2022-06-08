@@ -6,22 +6,57 @@ import Logo from '../comps/Logo';
 import styled from 'styled-components';
 import Intro from '../comps/Intro';
 import Dice from '../comps/Dice';
+import Button from '../comps/Button';
+import BookNow from '../comps/BookNow';
 
 export default function Home() {
   return (
-    <div>
+    <Cont>
       <Gradient/>
       <Logo />
       <Dice />
+      <BookNow />
+      <Content>
       <Intro />
-    </div>
+        <Text>DnD Hero League is the place for premium online Dungeons &amp; Dragons campaigns for ages 9-18. If you’re an experienced player, you’ll find an array of exciting ongoing campaigns and short adventures to join. If you’re new to DnD, we’ll teach you how to play and get you rolling quickly with your new favorite hobby. Come play alongside other heroes from around the world. </Text>
+        <Text>All our adventures are inclusive, positive and collaborative, set in rich, fantastical worlds with epic storylines.</Text>
+        <Text>All classes are integrated with Zoom and are hosted on Outschool, with professional dungeon masters and educators.</Text>
+        <Spacer>
+          <Button text='Learn More'/>
+        </Spacer>
+      </Content>
+    </Cont>
   )
 }
 
-const Content = styled.div`
+const Cont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:60vw;
+`
+
+const Content = styled.div`
+  display: flex;
+  width: 60vw; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
+const Text = styled.div`
+  font-family: 'Fondamento', cursive;
+  font-size: 1.7rem;
+  color: #FFFDC3;
+  top: auto;
+  line-height:2;
+  margin-bottom: 30px;
+`
+
+const Spacer = styled.div`
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
 `
