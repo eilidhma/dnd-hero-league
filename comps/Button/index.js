@@ -5,7 +5,7 @@ const Cont = styled.a`
     width: 250px;
     height: 60px;
     font-family: 'Fondamento', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #FFFDC3;
     border: 1px solid #FFFDC3;
     border-radius: 10px;
