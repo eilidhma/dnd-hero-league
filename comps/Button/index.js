@@ -22,10 +22,11 @@ const Cont = styled.a`
 `
 
 export default function Button({
-    text='text'
+    text='text',
+    href='https://outschool.com/search?startAfter=AllUpcoming&theme=life-skills&q=Brynne%20Morrice%2C%20BFA#abl47z57ew'
 }){
     return (
-        <Cont>
+        <Cont target='_blank' href={href}>
             {text}
         </Cont>
     )
