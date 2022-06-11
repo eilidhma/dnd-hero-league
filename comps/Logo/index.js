@@ -7,6 +7,10 @@ const Cont = styled.div`
     position: fixed;
     top:0;
     left:0;
+    z-index: 10;
+    @media (max-width: 500px) {
+        width: 150px;
+    }
 `
 
 export default function Logo(){

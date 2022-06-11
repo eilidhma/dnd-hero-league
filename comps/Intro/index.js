@@ -40,6 +40,9 @@ const Cont = styled.div`
     height: 100vh;
     justify-content: center;
     align-items: center;
+    @media (max-width: 500px) {
+        height: 100vh;
+    }
 `
 
 const Heading = styled.p`
@@ -48,6 +51,9 @@ const Heading = styled.p`
     color: #FFFDC3;
     margin: 0;
     padding: 10px;
+    @media (max-width: 500px) {
+        padding: 20px;
+    }
 `
 
 const Rotate = styled.div`

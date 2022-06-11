@@ -16,6 +16,9 @@ export default function Home() {
       <Logo />
       <Dice />
       <BookNow />
+      <Blocker>
+        <img src='/blocker.png' width={'100%'} height='80%' />
+      </Blocker>
       <Content>
       <Intro />
         <Text>DnD Hero League is the place for premium online Dungeons &amp; Dragons campaigns for ages 9-18. If you’re an experienced player, you’ll find an array of exciting ongoing campaigns and short adventures to join. If you’re new to DnD, we’ll teach you how to play and get you rolling quickly with your new favorite hobby. Come play alongside other heroes from around the world. </Text>
@@ -42,6 +45,20 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 500px) {
+        width: 80vw;
+    }
+`
+
+const Blocker = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 25vh;
+  z-index: 3;
+  @media (min-width: 501px) {
+        display: none;
+  }
 `
 
 const Text = styled.div`

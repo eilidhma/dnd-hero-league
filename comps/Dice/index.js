@@ -7,6 +7,9 @@ const Cont = styled.div`
     bottom:0;
     right:0;
     z-index: -1;
+    @media (max-width: 500px) {
+        opacity: 0.5;
+    }
 `
 
 export default function Dice(){

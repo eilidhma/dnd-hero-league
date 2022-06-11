@@ -19,14 +19,21 @@ const Cont = styled.a`
         cursor: pointer;
         color: black;
     }
+    @media (max-width: 500px) {
+        width: 150px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
 `
 
 export default function Button({
     text='text',
+    zIndex=1,
     href='https://outschool.com/search?startAfter=AllUpcoming&theme=life-skills&q=Brynne%20Morrice%2C%20BFA#abl47z57ew'
 }){
     return (
-        <Cont target='_blank' href={href}>
+        <Cont zIndex={zIndex} target='_blank' href={href}>
             {text}
         </Cont>
     )

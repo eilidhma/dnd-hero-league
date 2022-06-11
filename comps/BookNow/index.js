@@ -9,6 +9,7 @@ const Cont = styled.div`
     top:0;
     right:0;
     padding-top: 25px;
+    z-index: 20;
     padding-right: 25px;
 `
 
