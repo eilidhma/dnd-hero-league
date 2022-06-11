@@ -15,7 +15,7 @@ const Cont = styled.div`
 export default function Dice(){
     return (
         <Cont>
-            <img src="dice.png" width={700}/>
+            <img src="dice.png" width={700} height={'100%'}/>
         </Cont>
     )
 }
