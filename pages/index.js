@@ -54,7 +54,7 @@ const Blocker = styled.div`
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   z-index: 3;
   @media (min-width: 1400px) {
         display: none;
