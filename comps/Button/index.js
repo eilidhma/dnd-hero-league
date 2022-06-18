@@ -20,7 +20,7 @@ const Cont = styled.a`
         color: black;
     }
     @media (max-width: 500px) {
-        width: 150px;
+        width: 170px;
         height: 50px;
         font-size: 1.5rem;
     }

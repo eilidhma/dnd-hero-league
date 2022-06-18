@@ -25,7 +25,7 @@ export default function Home() {
         <Text>All our adventures are inclusive, positive and collaborative, set in rich, fantastical worlds with epic storylines.</Text>
         <Text>All classes are integrated with Zoom and are hosted on Outschool, with professional dungeon masters and educators.</Text>
         <Spacer>
-          <Button text='Learn More'/>
+          <Button text='Join the Party!'/>
         </Spacer>
       </Content>
     </Cont>
@@ -56,7 +56,7 @@ const Blocker = styled.div`
   width: 100vw;
   height: 25vh;
   z-index: 3;
-  @media (min-width: 501px) {
+  @media (min-width: 1400px) {
         display: none;
   }
 `

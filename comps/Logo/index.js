@@ -20,7 +20,7 @@ export default function Logo(){
         animate={{opacity:1}}
         transition={{delay:3, duration:2}}>
             <Cont>
-                <img src="logo.svg" style={{paddingTop:10}} width={200}/>
+                <img src="gold_logo.svg" style={{padding:10, margin:15}} width={170}/>
             </Cont>
         </motion.div>
     )
