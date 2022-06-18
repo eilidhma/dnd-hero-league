@@ -20,9 +20,9 @@ const Cont = styled.a`
         color: black;
     }
     @media (max-width: 500px) {
-        width: 170px;
-        height: 50px;
-        font-size: 1.5rem;
+        width: 130px;
+        height: 40px;
+        font-size: 1rem;
     }
 
 `

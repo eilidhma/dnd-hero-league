@@ -53,6 +53,7 @@ const Heading = styled.p`
     padding: 10px;
     @media (max-width: 500px) {
         padding: 20px;
+        font-size: 1.5rem;
     }
 `
 

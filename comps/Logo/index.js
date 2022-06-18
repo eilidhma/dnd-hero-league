@@ -9,7 +9,7 @@ const Cont = styled.div`
     left:0;
     z-index: 10;
     @media (max-width: 500px) {
-        width: 150px;
+        width: 130px;
     }
 `
 

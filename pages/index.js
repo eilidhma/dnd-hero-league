@@ -54,7 +54,7 @@ const Blocker = styled.div`
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 25vh;
+  height: 30vh;
   z-index: 3;
   @media (min-width: 1400px) {
         display: none;
@@ -68,6 +68,9 @@ const Text = styled.div`
   top: auto;
   line-height:2;
   margin-bottom: 30px;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `
 
 const Spacer = styled.div`
