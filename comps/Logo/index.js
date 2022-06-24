@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import react from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const Cont = styled.div`
     display: flex;
@@ -14,13 +15,18 @@ const Cont = styled.div`
 `
 
 export default function Logo(){
+
+    const r = useRouter();
+
+
     return (
         <motion.div
         initial={{opacity:0}}
         animate={{opacity:1}}
-        transition={{delay:3, duration:2}}>
+        transition={{delay:3, duration:2}}
+        >
             <Cont>
-                <img src="gold_logo.svg" style={{padding:10, margin:15}} width={170}/>
+                <img onClick={()=>r.push('/')} src="gold_logo.svg" style={{padding:10, margin:15}} width={170}/>
             </Cont>
         </motion.div>
     )

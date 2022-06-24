@@ -12,13 +12,13 @@ import BookNow from '../comps/BookNow';
 export default function Home() {
   return (
     <Cont>
-      <Gradient/>
+      {/* <Gradient/>
       <Logo />
       <Dice />
-      <BookNow />
-      <Blocker>
+      <BookNow /> */}
+      {/* <Blocker>
         <img src='/blocker.png' width={'100%'} height='80%' />
-      </Blocker>
+      </Blocker> */}
       <Content>
       <Intro />
         <Text>DnD Hero League is the place for premium online Dungeons &amp; Dragons campaigns for ages 9-18. If you’re an experienced player, you’ll find an array of exciting ongoing campaigns and short adventures to join. If you’re new to DnD, we’ll teach you how to play and get you rolling quickly with your new favorite hobby. Come play alongside other heroes from around the world. </Text>
