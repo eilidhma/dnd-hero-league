@@ -119,6 +119,17 @@ const Submit = styled.input`
     }
 `
 
+const Blocker = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 25vh;
+  z-index: 3;
+  /* @media (min-width: 1600px) {
+        display: none;
+  } */
+`
+
 export default function Contact(){
 
   const form = useRef();
@@ -139,6 +150,7 @@ export default function Contact(){
   };
 
   return <Cont>
+    <Blocker/>
         <form ref={form} onSubmit={sendEmail}>
         <Title>Contact Me!</Title>
         <SubTitle>Submit a message here, or contact me at: <br/><br/> brynne@dndheroleague.com</SubTitle>
