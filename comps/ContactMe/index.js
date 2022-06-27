@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Router, {useRouter} from "next/router";
 
 const Cont = styled.div`
-    @media (max-width: 449px) { 
+    @media (max-width: 700px) { 
     display: none;
     }
     display: flex;

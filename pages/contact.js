@@ -12,6 +12,9 @@ const Cont = styled.div`
 `
 
 const Section = styled.div`
+  @media (max-width: 500px) {
+    height: 70px;
+  }
   width:100%;
   display: flex;
   justify-content: center;
@@ -39,6 +42,7 @@ const SubTitle = styled.p`
   color:#FFFDC3;
   text-align:center;
   width:100%;
+  padding-bottom: 20px;
   @media (max-width: 500px) {
     font-size: 1rem;
   }

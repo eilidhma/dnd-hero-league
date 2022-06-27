@@ -9,8 +9,12 @@ const Cont = styled.div`
     top:0;
     left:0;
     z-index: 10;
+    width: 200px;
+    @media (max-width: 900px) {
+        width: 150px;
+    }
     @media (max-width: 500px) {
-        width: 130px;
+        width: 100px;
     }
 `
 
@@ -26,7 +30,7 @@ export default function Logo(){
         transition={{delay:3, duration:2}}
         >
             <Cont>
-                <img onClick={()=>r.push('/')} src="gold_logo.svg" style={{padding:10, margin:15}} width={170}/>
+                <img onClick={()=>r.push('/')} src="gold_logo.svg" style={{padding:10, margin:15}} width={'100%'}/>
             </Cont>
         </motion.div>
     )

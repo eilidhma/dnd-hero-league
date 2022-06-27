@@ -4,7 +4,7 @@ import Button from "../Button";
 import { motion } from "framer-motion";
 
 const Cont = styled.div`
-    @media (max-width: 449px) { 
+    @media (max-width: 700px) { 
     display: none;
     }
     display: flex;

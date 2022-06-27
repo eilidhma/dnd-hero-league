@@ -11,7 +11,7 @@ width: 100vw;
 position: fixed;
 top: 0;
 height: 80px;
-@media (min-width: 450px) { 
+@media (min-width: 700px) { 
   display: none;
 }
 `
