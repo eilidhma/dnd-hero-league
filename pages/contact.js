@@ -15,8 +15,9 @@ const Section = styled.div`
   width:100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100px;
+  flex-direction: column;
 `
 
 const Title = styled.p`
@@ -26,6 +27,9 @@ const Title = styled.p`
   color:#FFFDC3;
   text-align:center;
   width:100%;
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+  }
 `
 
 const SubTitle = styled.p`
@@ -35,56 +39,48 @@ const SubTitle = styled.p`
   color:#FFFDC3;
   text-align:center;
   width:100%;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `
 
 const Label = styled.label`
-    /* @media ${device.mobile} {
-      display: block;
-      font-size: 1.2rem;
+    @media (max-width: 500px) {
+    min-width: 30vw;
+    max-width: 30vw;
+    border-radius: 0px;
+    width: 50vw;
+    font-size: 1.2rem;
     }
-    @media ${device.tablet} {
-      display:inline-block;
-      font-size:1.5rem; 
-  } */
-  font-family: 'Fondamento', cursive;
+    font-family: 'Fondamento', cursive;
     font-size: 1.5rem;
     color:#FFFDC3;
     width: 15vw;
 `
-
 const Input = styled.input`
-/* @media ${device.mobile} {
-    min-width:70vw;
+  @media (max-width: 500px) {
+    min-width: 100%;
+    max-width: 100%;
+    }
     border-top:none;
     border-left:none;
     border-right:none;
     border-bottom: 1px solid #FFFDC3;
-  }
-  @media ${device.tablet} {
-    min-width:40vw;
-} */
-    border-top:none;
-    border-left:none;
-    border-right:none;
-    border-bottom: 1px solid #FFFDC3;
-  color:#FFFDC3;
-  font-weight:300;
-  min-width: 30vw;
-  max-width: 30vw;
-  background-color: transparent;
-  font-family: 'Fondamento', cursive;
-  font-size: 20px;
+    color:#FFFDC3;
+    font-weight:300;
+    min-width: 30vw;
+    max-width: 30vw;
+    background-color: transparent;
+    font-family: 'Fondamento', cursive;
+    font-size: 20px;
 `
 
 const TextArea = styled.textarea`
-/* @media ${device.mobile} {
-    max-width:70vw;
-    min-width:70vw;
-  }
-  @media ${device.tablet} {
-    max-width:40vw;
-    min-width:40vw;
-  } */
+@media (max-width: 500px) {
+  min-width: 100%;
+    max-width: 100%;
+    border-radius: 0px;
+    }
   border-top:none;
   border-left:none;
   border-right:none;
@@ -117,17 +113,6 @@ const Submit = styled.input`
         cursor: pointer;
         color: black;
     }
-  /* @media ${device.mobile} { 
-    width: 200px;
-    font-size:1rem;
-    margin-right: 10px;
-    border-radius: 0px;
-  }
-  @media ${device.tablet} {
-    width:200px;
-    font-size:1.2rem;
-    margin-right: 20px;
-  } */
 `
 
 export default function Contact(){
