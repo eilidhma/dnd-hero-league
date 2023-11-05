@@ -7,13 +7,13 @@ const Cont = styled.div`
     @media (max-width: 700px) { 
     display: none;
     }
-    display: flex;
-    position: fixed;
-    top:0;
-    right:0;
-    padding-top: 25px;
-    z-index: 20;
-    padding-right: 25px;
+    /* display: flex; */
+    /* position: fixed; */
+    /* top:0; */
+    /* right:0; */
+    /* padding-top: 25px; */
+    /* z-index: 20; */
+    /* padding-right: 25px; */
 `
 
 export default function BookNow(){
@@ -23,7 +23,7 @@ export default function BookNow(){
         animate={{opacity:1}}
         transition={{delay:3, duration:2}}>
             <Cont>
-                <Button text="Book Now"/>
+              <Button text="Book Now"/>
             </Cont>
         </motion.div>
     )

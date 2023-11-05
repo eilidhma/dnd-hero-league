@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import react from "react";
+import { useRouter } from "next/router";
 
 const Cont = styled.div`
     display: flex;
@@ -13,6 +14,14 @@ const Cont = styled.div`
 `
 
 export default function Dice(){
+
+  const r = useRouter()
+
+    if(r.pathname === "/about"){
+      return <></>
+    }
+
+
     return (
         <Cont>
             <img src="dice.png" width={700} height={'100%'}/>

@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
   <Logo />
   <Dice />
   <ContactMe />
-  <BookNow />
   <Hamb />
   <Component {...pageProps} />
 

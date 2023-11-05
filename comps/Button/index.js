@@ -2,7 +2,7 @@ import styled from "styled-components";
 import react from "react";
 
 const Cont = styled.a`
-    width: 250px;
+    width: 230px;
     height: 60px;
     font-family: 'Fondamento', cursive;
     font-size: 1.5rem;

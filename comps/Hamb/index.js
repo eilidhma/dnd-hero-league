@@ -124,7 +124,10 @@ const Hamb = ({
             <a style={{padding:50, fontSize:20}} target='blank' href='https://outschool.com/search?startAfter=AllUpcoming&theme=life-skills&q=Brynne%20Morrice%2C%20BFA#abl47z57ew'>Book Now</a>
             <a style={{padding:50, fontSize:20}} onClick={()=>{
                 setOpen(false)
-                r.push('./contact')}}>Contact Me</a>
+                r.push('./about')}}>About</a>
+            <a style={{padding:50, fontSize:20}} onClick={()=>{
+            setOpen(false)
+            r.push('./contact')}}>Contact</a>
         </div>
         </Menu>
       </Cont>

@@ -52,9 +52,12 @@ const Blocker = styled.div`
   width: 100vw;
   height: 25vh;
   z-index: 3;
-  /* @media (min-width: 1600px) {
-        display: none;
-  } */
+   @media (max-width: 900px) {
+        height: 20vh;
+    }
+    @media (max-width: 500px) {
+      height: 16vh;
+    }
 `
 
 const Text = styled.div`

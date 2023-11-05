@@ -30,7 +30,7 @@ export default function Logo(){
         transition={{delay:3, duration:2}}
         >
             <Cont>
-                <img onClick={()=>r.push('/')} src="gold_logo.svg" style={{padding:10, margin:15}} width={'100%'}/>
+                <img onClick={()=>r.push('/')} src="gold_logo.svg" style={{padding:10, margin:15, cursor: "pointer"}} width={'100%'}/>
             </Cont>
         </motion.div>
     )
