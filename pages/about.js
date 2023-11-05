@@ -19,7 +19,7 @@ export default function About(){
       
       <Section pd="0px 50px" pdBreak="0px 0px 50px 0px" width="40%" breakWidth="100%">
         <div style={{display:"flex", width: "100%", justifyContent: "center", alignItems: "center"}}>
-          <img style={{maxWidth: 500, minWidth: 350}} src='B-framed.png' width={'100%'} /> 
+          <img style={{maxWidth: 500, minWidth: 350, paddingTop:10}} src='small.png' width={'100%'} /> 
         </div>
       </Section>
 
