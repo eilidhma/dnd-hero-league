@@ -16,16 +16,15 @@ export default function Campaigns(){
         <Section>
           <q>In this epic ongoing adventure, our heroes will join the company of world-famous monster hunter, Alphirus Dragore, as they undertake strange and exotic monster-hunting missions across the Land of Enchantment, Rythianor. A D&D 5e campaign.</q>
         </Section>
-        {/* <Section>"In this epic ongoing adventure, our heroes will join the company of world-famous monster hunter, Alphirus Dragore, as they undertake strange and exotic monster-hunting missions across the Land of Enchantment, Rythianor. A D&D 5e campaign."</Section> */}
-        {/* <Button href='https://checkout.stripe.com/c/pay/cs_live_a1lXetOVOOq4AWqk0YqzTHlL7fgxeBVsiam7TKFbx1vuvksAjDmDVGUlz5#fidkdWxOYHwnPyd1blppbHNgWjA0SkNOMkpXczZWblByNnFvcGRgUmMwcmt%2FS2lMYW5kVmtpNjdQSkh1MDEydFJjZHFjUEA0SjFhcEB0fXxqSjE3fGIyTXI0aXN0cGJwN0loZjVxX0c8aTJHNTVUSHZtcHJrPScpJ3VpbGtuQH11anZgYUxhJz8nNDFuNmEzMnVLM0NTMV9SNDExJ3gl' margin='80px 0px 80px 0px' text='Register'/> */}
-        {/* <SmallSection>Monster Hunters Inc. is an ongoing adventure. You can join at the beginning or you can jump in at anytime to join the hunt!
+        <Button href='https://checkout.stripe.com/c/pay/cs_live_a1lXetOVOOq4AWqk0YqzTHlL7fgxeBVsiam7TKFbx1vuvksAjDmDVGUlz5#fidkdWxOYHwnPyd1blppbHNgWjA0SkNOMkpXczZWblByNnFvcGRgUmMwcmt%2FS2lMYW5kVmtpNjdQSkh1MDEydFJjZHFjUEA0SjFhcEB0fXxqSjE3fGIyTXI0aXN0cGJwN0loZjVxX0c8aTJHNTVUSHZtcHJrPScpJ3VpbGtuQH11anZgYUxhJz8nNDFuNmEzMnVLM0NTMV9SNDExJ3gl' margin='80px 0px 80px 0px' text='Register'/>
+        <SmallSection>Monster Hunters Inc. is an ongoing adventure. You can join at the beginning or you can jump in at anytime to join the hunt!
 
-  This is an immersive Dungeons and Dragons campaign for players who wish to build a vibrant character and create an ongoing, fully-realized adventure with that character. Together, we will tell an epic story of your heroes' life.
+        This is an immersive Dungeons and Dragons campaign for players who wish to build a vibrant character and create an ongoing, fully-realized adventure with that character. Together, we will tell an epic story of your heroes' life.
 
-  Our adventures will focus on team-building, storytelling, rich roleplaying, creative problem solving, exploration of wondrous fantasy lands and, of course, the hunting of unique, bizarre, fantastical creatures!
+        Our adventures will focus on team-building, storytelling, rich roleplaying, creative problem solving, exploration of wondrous fantasy lands and, of course, the hunting of unique, bizarre, fantastical creatures!
 
-  It is recommended that you have played D&D 5th Edition before, however it is not required. If you are brand new to the game, let me know and I will be delighted to introduce you to the game.
-  </SmallSection> */}
+        It is recommended that you have played D&D 5th Edition before, however it is not required. If you are brand new to the game, let me know and I will be delighted to introduce you to the game.
+        </SmallSection>
       </Cont>
   </>
 }
