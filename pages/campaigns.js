@@ -14,7 +14,7 @@ export default function Campaigns(){
         </ImgCont>
         <Title>Monster Hunters Inc</Title>
         <Section>"In this epic ongoing adventure, our heroes will join the company of world-famous monster hunter, Alphirus Dragore, as they undertake strange and exotic monster-hunting missions across the Land of Enchantment, Rythianor. A D&D 5e campaign."</Section>
-        <Button href='https://checkout.stripe.com/c/pay/cs_live_a1lXetOVOOq4AWqk0YqzTHlL7fgxeBVsiam7TKFbx1vuvksAjDmDVGUlz5#fidkdWxOYHwnPyd1blppbHNgWjA0SkNOMkpXczZWblByNnFvcGRgUmMwcmt%2FS2lMYW5kVmtpNjdQSkh1MDEydFJjZHFjUEA0SjFhcEB0fXxqSjE3fGIyTXI0aXN0cGJwN0loZjVxX0c8aTJHNTVUSHZtcHJrPScpJ3VpbGtuQH11anZgYUxhJz8nNDFuNmEzMnVLM0NTMV9SNDExJ3gl' margin='80px 0px 80px 0px' text='Register'/>
+        {/* <Button href='https://checkout.stripe.com/c/pay/cs_live_a1lXetOVOOq4AWqk0YqzTHlL7fgxeBVsiam7TKFbx1vuvksAjDmDVGUlz5#fidkdWxOYHwnPyd1blppbHNgWjA0SkNOMkpXczZWblByNnFvcGRgUmMwcmt%2FS2lMYW5kVmtpNjdQSkh1MDEydFJjZHFjUEA0SjFhcEB0fXxqSjE3fGIyTXI0aXN0cGJwN0loZjVxX0c8aTJHNTVUSHZtcHJrPScpJ3VpbGtuQH11anZgYUxhJz8nNDFuNmEzMnVLM0NTMV9SNDExJ3gl' margin='80px 0px 80px 0px' text='Register'/> */}
         {/* <SmallSection>Monster Hunters Inc. is an ongoing adventure. You can join at the beginning or you can jump in at anytime to join the hunt!
 
   This is an immersive Dungeons and Dragons campaign for players who wish to build a vibrant character and create an ongoing, fully-realized adventure with that character. Together, we will tell an epic story of your heroes' life.
