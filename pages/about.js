@@ -1,12 +1,21 @@
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import React, { useState, useContext, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 export default function About(){
 
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  return <Cont>
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/small.png';
+    img.onload = () => setImageLoaded(true);
+  }, []);
+
+  return <>
+    {imageLoaded && 
+    <Cont>
       <Blocker>
         <img src='/blocker.png' width={'100%'} height='80%' />
       </Blocker>
@@ -19,11 +28,13 @@ export default function About(){
       
       <Section pd="0px 50px" pdBreak="0px 0px 50px 0px" width="40%" breakWidth="100%">
         <div style={{display:"flex", width: "100%", justifyContent: "center", alignItems: "center"}}>
-          <img style={{maxWidth: 500, minWidth: 350, paddingTop:10}} src='small.png' width={'100%'} /> 
+          <img style={{maxWidth: 500, minWidth: 350, paddingTop:10}} src='/small.png' width={'100%'} /> 
         </div>
       </Section>
 
     </Cont>
+    }
+  </>
 }
 
 const Cont = styled.div`
