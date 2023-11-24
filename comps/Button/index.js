@@ -2,6 +2,7 @@ import styled from "styled-components";
 import react from "react";
 
 const Cont = styled.a`
+    margin: ${({margin})=>margin};
     width: 230px;
     height: 60px;
     font-family: 'Fondamento', cursive;
@@ -29,11 +30,12 @@ const Cont = styled.a`
 
 export default function Button({
     text='text',
+    margin = "auto",
     zIndex=1,
     href='https://outschool.com/search?startAfter=AllUpcoming&theme=life-skills&q=Brynne%20Morrice%2C%20BFA#abl47z57ew'
 }){
     return (
-        <Cont zIndex={zIndex} target='_blank' href={href}>
+        <Cont margin={margin} zIndex={zIndex} target='_blank' href={href}>
             {text}
         </Cont>
     )

@@ -17,7 +17,7 @@ export default function Dice(){
 
   const r = useRouter()
 
-    if(r.pathname === "/about"){
+    if(r.pathname === "/about" || r.pathname === "/campaigns"){
       return <></>
     }
 

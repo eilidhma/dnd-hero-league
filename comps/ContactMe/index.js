@@ -4,6 +4,7 @@ import Button from "../Button";
 import { motion } from "framer-motion";
 import Router, {useRouter} from "next/router";
 import BookNow from "../BookNow";
+import { useState, useEffect } from "react";
 
 const Cont = styled.div`
     @media (max-width: 700px) { 
@@ -39,6 +40,7 @@ const Cont = styled.div`
 const NavItem = styled.div`
   display: flex;
   min-width: 150px;
+  text-decoration: ${({textDeco})=>textDeco};
   &:hover {
         cursor: pointer;
         text-decoration: underline;
@@ -69,23 +71,45 @@ const NavBar = styled.div`
 export default function ContactMe(){
 
     const r = useRouter()
+    const [scrolling, setScrolling] = useState(false);
+    const [prevScrollY, setPrevScrollY] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+  
+        setScrolling(currentScrollY > 0 && currentScrollY > prevScrollY);
+        setPrevScrollY(currentScrollY);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [prevScrollY]);
+  
     
     return (
         <motion.div
-        style={{position: "fixed", top: 0, display: "flex", width: "100%", zIndex: 20}}
+        style={{ position: "fixed", top: scrolling ? -100 : 0, display: "flex", width: "100%", zIndex: 20, transition: "top 0.25s ease"
+      }}
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{delay:3, duration:2}}>
             <NavBar>
-              <NavItem onClick={()=>r.push('./about')}>
+              <NavItem textDeco={r.pathname === '/about' ? "underline" : "auto"} onClick={()=>r.push('./about')}>
                 About
               </NavItem>
-              <NavItem onClick={()=>r.push('./contact')}>
+              <NavItem textDeco={r.pathname === '/contact' ? "underline" : "auto"} onClick={()=>r.push('./contact')}>
                 Contact
               </NavItem>
-              <NavItem>
-                <BookNow />
+              <NavItem textDeco={r.pathname === '/campaigns' ? "underline" : "auto"} onClick={()=>r.push('./campaigns')}>
+                Campaigns
               </NavItem>
+              {/* <NavItem>
+                <BookNow />
+              </NavItem> */}
             </NavBar>
         </motion.div>
     )
