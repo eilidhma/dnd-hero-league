@@ -18,9 +18,15 @@ export default function Campaigns(){
   return <>
   {imageLoaded && (
     <Cont>
-        <ImgCont>
-          <img src='/mhi.jpg' width={'100%'} />
-        </ImgCont>
+        <motion.div
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{delay:0, duration:1}}
+        >
+          <ImgCont>
+            <img src='/mhi.jpg' width={'100%'} />
+          </ImgCont>
+        </motion.div>
         <Title>Monster Hunters Inc</Title>
         <Section>
           <q>In this epic ongoing adventure, our heroes will join the company of world-famous monster hunter, Alphirus Dragore, as they undertake strange and exotic monster-hunting missions across the Land of Enchantment, Rythianor. A D&D 5e campaign.</q>
