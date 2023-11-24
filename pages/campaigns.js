@@ -1,13 +1,22 @@
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import React, { useState, useContext, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../comps/Button';
 
 
 export default function Campaigns(){
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/mhi.jpg';
+    img.onload = () => setImageLoaded(true);
+  }, []);
+
 
   return <>
+  {imageLoaded && (
     <Cont>
         <ImgCont>
           <img src='/mhi.jpg' width={'100%'} />
@@ -25,6 +34,7 @@ export default function Campaigns(){
         It is recommended that you have played D&D 5th Edition before, however it is not required. If you are brand new to the game, let me know and I will be delighted to introduce you to the game.
         </SmallSection>
       </Cont>
+    )}
   </>
 }
 
