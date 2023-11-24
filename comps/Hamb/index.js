@@ -99,7 +99,6 @@ const Hamb = ({
   useEffect(()=>{
     console.log(open)
   },[open])
-  console.log(open)
 
 
   return <Cont>

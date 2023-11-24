@@ -1,13 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Gradient from '../comps/Gradient';
-import Logo from '../comps/Logo';
 import styled from 'styled-components';
 import Intro from '../comps/Intro';
-import Dice from '../comps/Dice';
 import Button from '../comps/Button';
-import BookNow from '../comps/BookNow';
 
 export default function Home() {
   return (
