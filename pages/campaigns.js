@@ -1,96 +1,119 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { motion } from "framer-motion";
-import React, { useState, useEffect } from 'react';
-import Button from '../comps/Button';
+import { useState, useEffect } from "react";
+import Button from "../comps/Button";
+import { useRouter } from "next/router";
 
-
-export default function Campaigns(){
-
+export default function Campaigns() {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const { query } = useRouter();
 
   useEffect(() => {
     const img = new Image();
-    img.src = '/mhi.jpg';
+    img.src = "/mhi.jpg";
     img.onload = () => setImageLoaded(true);
   }, []);
 
+  const campaigns = {
+    default: "https://buy.stripe.com/14k3d67pN6FV4ZW144",
+    friday: "https://buy.stripe.com/00w6oJgJ78UE63Xdux2sM01",
+    friday_inc: "https://buy.stripe.com/28E28tdwV5Is63X4Y12sM02",
+  };
 
-  return <>
-  {imageLoaded && (
-    <Cont>
-        <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{delay:0, duration:1}}
-        >
-          <ImgCont>
-            <img src='/mhi.jpg' width={'100%'} />
-          </ImgCont>
-        </motion.div>
-        <Title>Monster Hunters Inc</Title>
-        <Section>
-          <q>In this epic ongoing adventure, our heroes will join the company of world-famous monster hunter, Alphirus Dragore, as they undertake strange and exotic monster-hunting missions across the Land of Enchantment, Rythianor. A D&D 5e campaign.</q>
-        </Section>
-        <Button href='https://buy.stripe.com/14k3d67pN6FV4ZW144' margin='80px 0px 80px 0px' text='Register'/>
-        <SmallSection>
-          Monster Hunters Inc. is an ongoing adventure. You can join at the beginning or you can jump in at anytime to join the hunt! This is an immersive Dungeons and Dragons campaign for players who wish to build a vibrant character and create an ongoing, fully-realized adventure with that character. Together, we will tell an epic story of your heroes&rsquo; life.
-
-        Our adventures will focus on team-building, storytelling, rich roleplaying, creative problem solving, exploration of wondrous fantasy lands and, of course, the hunting of unique, bizarre, fantastical creatures!
-
-        It is recommended that you have played D&D 5th Edition before, however it is not required. If you are brand new to the game, let me know and I will be delighted to introduce you to the game.
-        </SmallSection>
-      </Cont>
-    )}
-  </>
+  return (
+    <>
+      {imageLoaded && (
+        <Cont>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0, duration: 1 }}
+          >
+            <ImgCont>
+              <img src="/mhi.jpg" width={"100%"} />
+            </ImgCont>
+          </motion.div>
+          <Title>Monster Hunters Inc</Title>
+          <Section>
+            <q>
+              In this epic ongoing adventure, our heroes will join the company
+              of world-famous monster hunter, Alphirus Dragore, as they
+              undertake strange and exotic monster-hunting missions across the
+              Land of Enchantment, Rythianor. A D&D 5e campaign.
+            </q>
+          </Section>
+          <Button
+            href={campaigns[query.ref] ?? campaigns.default}
+            margin="80px 0px 80px 0px"
+            text="Register"
+          />
+          <SmallSection>
+            Monster Hunters Inc. is an ongoing adventure. You can join at the
+            beginning or you can jump in at anytime to join the hunt! This is an
+            immersive Dungeons and Dragons campaign for players who wish to
+            build a vibrant character and create an ongoing, fully-realized
+            adventure with that character. Together, we will tell an epic story
+            of your heroes&rsquo; life. Our adventures will focus on
+            team-building, storytelling, rich roleplaying, creative problem
+            solving, exploration of wondrous fantasy lands and, of course, the
+            hunting of unique, bizarre, fantastical creatures! It is recommended
+            that you have played D&D 5th Edition before, however it is not
+            required. If you are brand new to the game, let me know and I will
+            be delighted to introduce you to the game.
+          </SmallSection>
+        </Cont>
+      )}
+    </>
+  );
 }
 
 const Cont = styled.div`
   display: flex;
-  width:100vw;
-  min-height:100vh;
-  justify-content:flex-start;
-  align-items:center;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-`
+`;
 
 const Section = styled.div`
   @media (max-width: 500px) {
     font-size: 1.2rem;
     margin-bottom: 0;
   }
-  font-family: 'Fondamento', cursive;
+  font-family: "Fondamento", cursive;
   font-size: 1.7rem;
-  font-weight:300;
-  color:#FFFDC3;
-  padding: ${({pd})=>pd};
+  font-weight: 300;
+  color: #fffdc3;
+  padding: ${({ pd }) => pd};
   justify-content: center;
   align-items: flex-start;
   width: 70%;
   line-height: 50px;
   text-align: center;
   margin-bottom: 50px;
-`
+`;
 
 const SmallSection = styled.div`
   @media (max-width: 500px) {
     padding: 0px 50px 50px 50px;
   }
-  font-family: 'Fondamento', cursive;
+  font-family: "Fondamento", cursive;
   font-size: 1.2rem;
-  font-weight:300;
-  color:#FFFDC3;
-  padding: ${({pd})=>pd};
+  font-weight: 300;
+  color: #fffdc3;
+  padding: ${({ pd }) => pd};
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   padding: 30px 50px 50px 50px;
-`
+`;
 
 const Title = styled.p`
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 2.5rem;
   font-weight: 300;
-  color: #FFFDC3;
+  color: #fffdc3;
   text-align: center;
   margin-top: 150px;
   margin-bottom: 100px;
@@ -103,9 +126,8 @@ const Title = styled.p`
   }
   @media (max-width: 900px) {
     font-size: 2rem;
-
   }
-`
+`;
 
 const Blocker = styled.div`
   position: fixed;
@@ -113,15 +135,14 @@ const Blocker = styled.div`
   width: 100vw;
   height: 25vh;
   z-index: 3;
-   @media (max-width: 900px) {
-      height: 20vh;
-    }
-    @media (max-width: 500px) {
-      height: 16vh;
-    }
-`
+  @media (max-width: 900px) {
+    height: 20vh;
+  }
+  @media (max-width: 500px) {
+    height: 16vh;
+  }
+`;
 
 const ImgCont = styled.div`
   display: flex;
-
-`
+`;
