@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Head from "next/head";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Button from "../comps/Button";
@@ -22,6 +23,16 @@ export default function Campaigns() {
 
   return (
     <>
+      <Head>
+        <title>Monster Hunters Inc | D&D Campaign | DnD Hero League</title>
+        <meta name="description" content="Join Monster Hunters Inc, an ongoing Dungeons & Dragons 5e campaign run by Brynne Morrice. Hunt exotic monsters across the fantasy world of Rythianor. Register now." />
+        <meta name="keywords" content="Brynne Morrice, Dungeons and Dragons, D&D 5e, DnD campaign, Dungeon Master, Monster Hunters Inc, DnD Hero League, online D&D" />
+        <meta property="og:title" content="Monster Hunters Inc | D&D Campaign | DnD Hero League" />
+        <meta property="og:description" content="An ongoing D&D 5e campaign led by Dungeon Master Brynne Morrice. Join the hunt across the Land of Enchantment, Rythianor." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dndheroleague.com/campaigns" />
+        <link rel="canonical" href="https://www.dndheroleague.com/campaigns" />
+      </Head>
       {imageLoaded && (
         <Cont>
           <motion.div

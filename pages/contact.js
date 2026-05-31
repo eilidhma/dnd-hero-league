@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 import React, { useState, useContext, useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -150,6 +151,16 @@ export default function Contact(){
   };
 
   return <Cont>
+    <Head>
+      <title>Contact Brynne Morrice | DnD Hero League</title>
+      <meta name="description" content="Get in touch with Brynne Morrice and DnD Hero League. Questions about D&D campaigns, Dungeon Master sessions, or joining a game? Reach out here." />
+      <meta name="keywords" content="Brynne Morrice, contact, Dungeons and Dragons, DnD, Dungeon Master, DnD Hero League" />
+      <meta property="og:title" content="Contact Brynne Morrice | DnD Hero League" />
+      <meta property="og:description" content="Contact DnD Hero League and Dungeon Master Brynne Morrice." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.dndheroleague.com/contact" />
+      <link rel="canonical" href="https://www.dndheroleague.com/contact" />
+    </Head>
     <Blocker/>
         <form ref={form} onSubmit={sendEmail}>
         <Title>Contact Me!</Title>

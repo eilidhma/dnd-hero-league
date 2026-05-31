@@ -1,10 +1,21 @@
 import styled from 'styled-components';
+import Head from 'next/head';
 import Intro from '../comps/Intro';
 import Button from '../comps/Button';
 
 export default function Home() {
   return (
     <Cont>
+      <Head>
+        <title>DnD Hero League | Online Dungeons & Dragons Campaigns</title>
+        <meta name="description" content="DnD Hero League offers premium online Dungeons & Dragons campaigns for ages 9–18, led by professional Dungeon Master Brynne Morrice. Join epic D&D adventures from anywhere in the world." />
+        <meta name="keywords" content="Brynne Morrice, Dungeons and Dragons, D&D, DnD, Dungeon Master, online D&D campaigns, D&D for kids, DnD Hero League" />
+        <meta property="og:title" content="DnD Hero League | Online Dungeons & Dragons Campaigns" />
+        <meta property="og:description" content="Premium online D&D campaigns for ages 9–18 led by professional Dungeon Master Brynne Morrice." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dndheroleague.com" />
+        <link rel="canonical" href="https://www.dndheroleague.com" />
+      </Head>
       {/* <Blocker>
         <img src='/blocker.png' width={'100%'} height='80%' />
       </Blocker> */}

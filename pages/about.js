@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from 'react';
 
@@ -14,7 +15,17 @@ export default function About(){
   }, []);
 
   return <>
-    {imageLoaded && 
+    <Head>
+      <title>Brynne Morrice | Professional Dungeon Master | DnD Hero League</title>
+      <meta name="description" content="Meet Brynne Morrice, professional Dungeon Master with over 2,000 hours of experience running Dungeons & Dragons, Call of Cthulhu, and more. Founder of DnD Hero League." />
+      <meta name="keywords" content="Brynne Morrice, Dungeon Master, Dungeons and Dragons, D&D, DnD, professional DM, DnD Hero League" />
+      <meta property="og:title" content="Brynne Morrice | Professional Dungeon Master | DnD Hero League" />
+      <meta property="og:description" content="Professional Dungeon Master with 2,000+ hours of D&D experience. Founder of DnD Hero League." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.dndheroleague.com/about" />
+      <link rel="canonical" href="https://www.dndheroleague.com/about" />
+    </Head>
+    {imageLoaded &&
     <Cont>
       <Blocker>
         <img src='/blocker.png' width={'100%'} height='80%' />
